@@ -254,11 +254,11 @@ body {
     margin-top: 50px;
   }
 
-  .container-3 .third-child-container {
-    display: grid;
-  }
-  .container-3 .grid .graph-1 {
-    width: 100px;
+  .container-3 .third-child-container .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 20%;
   }
   .container-3 .graph-2 {
     width: 100%;
@@ -275,6 +275,46 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
+  }
+  .container-5 .fifth-child-container div {
+    border: none;
+  }
+}
+@media (max-width: 850px) {
+  .main-container .child-container .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-container .child-container .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main-container .child-container .tv-image img {
+    width: 100%;
+  }
+
+  .container-3 .third-child-container .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container-4 .fourth-child-container .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-5 .fifth-child-container .grid {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-5 .fifth-child-container .grid div {
+    border: none;
   }
 }
 
